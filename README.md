@@ -12,7 +12,6 @@
 
 # Usage
 
-    布局文件中：
     <com.hitomi.refresh.view.FunGameRefreshView
         android:id="@+id/refresh_hit_block"
         android:layout_width="match_parent"
@@ -38,7 +37,6 @@
         refreshView.setOnRefreshListener(new FunGameRefreshView.FunGameRefreshListener() {
             @Override
             public void onPullRefreshing() {
-                // 模拟后台耗时任务
                 SystemClock.sleep(2000);
             }
 
